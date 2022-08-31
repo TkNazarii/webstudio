@@ -1,0 +1,5 @@
+.page-title {
+    margin-bottom: 50px;
+    @include decor(700, 36px, 42px);
+    text-align: center;
+}

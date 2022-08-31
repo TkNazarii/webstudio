@@ -1,0 +1,31 @@
+.customers {
+    &__list {
+        @extend %align;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__link {
+        @extend %align;
+        width: 170px;
+        height: 92px;
+        border: 1px solid var(--color-background-icon);
+        border-radius: 4px;
+        transition: border-color var(--time-cub-animation);
+
+        &:hover,
+        &:focus {
+            border-color: var(--color-accent);
+        }
+    }
+
+    &__icon {
+        fill: var(--color-background-icon);
+        transition: fill var(--time-cub-animation);
+
+        .customers__link:hover &,
+        .customers__link:focus & {
+            fill: var(--color-accent);
+        }
+    }
+}

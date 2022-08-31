@@ -1,0 +1,13 @@
+.contact-info_link {
+    display: flex;
+    align-items: center;
+    @include decor(500, 14px, 16px);
+    letter-spacing: 0.02em;
+    color: var(--color-gray-text);
+    transition: color var(--time-cub-animation);
+
+    &:hover,
+    &:focus {
+        color: var(--color-accent);
+    }
+}

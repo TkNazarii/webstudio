@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WebStudio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+        />
+        <link rel="stylesheet" href="./css/main.min.css" />
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="header">
+            <div class="container header__container">
+                <a class="logo logo_dark underline" href="./index.html" lang="en"
+                    ><span class="logo__first-word">Web</span>Studio</a
+                >
+                <nav class="nav header__nav">
+                    <ul class="nav__list mark">
+                        <li class="nav__item">
+                            <a class="nav__link underline" href="./index.html"
+                                >Студія</a
+                            >
+                        </li>
+
+                        <li class="nav__item">
+                            <a class="nav__link nav__link_current underline" href="./portfolio.html">Портфоліо</a>
+                        </li>
+
+                        <li class="nav__item last">
+                            <a class="nav__link underline" href="">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="mobile-menu-open" data-menu-open>
+                    <svg class="mobile-menu-open__icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-mobile-menu-open"></use>
+                    </svg>
+                </button>
+
+                <ul class="contact header__contact mark">
+                    <li class="contact__item">
+                        <a class="contact-info_link underline" href="mailto:info@devstudio.com">
+                            <svg class="contact__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+
+                    <li class="contact__item">
+                        <a class="contact-info_link underline" href="tel:+380961111111">
+                            <svg class="contact__icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button class="mobile-menu__close" data-menu-close>
+                        <svg class="mobile-menu__icon" width="40" height="40">
+                            <use href="./images/icons.svg#icon-mobile-menu-close"></use>
+                        </svg>
+                    </button>
+
+                    <div class="mobile-menu__list-wrapper">
+                        <div class="mobile-menu__list">
+                            <ul class="nav-menu__list mark">
+                                <li class="nav-menu__item">
+                                    <a
+                                        class="nav-menu__link underline"
+                                        href="./index.html"
+                                        >Студія</a
+                                    >
+                                </li>
+
+                                <li class="nav-menu__item">
+                                    <a class="nav-menu__link nav-menu__link_current underline" href="./portfolio.html"
+                                        >Портфоліо</a
+                                    >
+                                </li>
+
+                                <li class="nav-menu__item last">
+                                    <a class="nav-menu__link underline" href="">Контакти</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile-menu__list">
+                            <ul class="contact-menu mark">
+                                <li class="contact-menu__item">
+                                    <a
+                                        class="contact-menu__link contact-menu__link_tel underline"
+                                        href="tel:+380961111111"
+                                    >
+                                        +38 096 111 11 11
+                                    </a>
+                                </li>
+
+                                <li class="contact-menu__item">
+                                    <a
+                                        class="contact-menu__link contact-menu__link_mail underline"
+                                        href="mailto:info@devstudio.com"
+                                    >
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="social-menu mark">
+                                <li class="social-menu__item">
+                                    <a class="social-menu__link underline" href="">Instagram</a>
+                                </li>
+                                <li class="social-menu__item">
+                                    <a class="social-menu__link underline" href="">Twitter</a>
+                                </li>
+                                <li class="social-menu__item">
+                                    <a class="social-menu__link underline" href="">Facebook</a>
+                                </li>
+                                <li class="social-menu__item">
+                                    <a class="social-menu__link underline" href="">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--===== / HEADER =====-->
+
+        <!--===== MAIN =====-->
+        <main class="works-portfolio">
+            <!--===== FILTER =====-->
+            <section class="filter section">
+                <div class="container">
+                    <h1 class="visually-hidden">Переваги</h1>
+
+                    <ul class="filter__list mark">
+                        <li class="filter__item">
+                            <button class="filter__btn filter__btn_current" type="button">
+                                Все
+                            </button>
+                        </li>
+
+                        <li class="filter__item">
+                            <button class="filter__btn" type="button">Веб-сайти</button>
+                        </li>
+
+                        <li class="filter__item">
+                            <button class="filter__btn" type="button">Додатки</button>
+                        </li>
+
+                        <li class="filter__item">
+                            <button class="filter__btn" type="button">Дизайн</button>
+                        </li>
+
+                        <li class="filter__item">
+                            <button class="filter__btn" type="button">Маркетинг</button>
+                        </li>
+                    </ul>
+                    <!--===== /FILTER =====-->
+
+                    <!--===== WORK =====-->
+                    <ul class="work mark">
+                        <li class="work__item">
+                            <a class="work__link underline" href="">
+                                <div class="work__box">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/webp-x/desk-texnocrack.webp  1x,
+                                                ./images/desk/work-list/webp-xx/desk-texnocrack@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/jpg-x/desk-texnocrack.jpg  1x,
+                                                ./images/desk/work-list/jpg-xx/desk-texnocrack@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/webp-x/tab-texnocrack.webp  1x,
+                                                ./images/tab/work-list/webp-xx/tab-texnocrack@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/jpg-x/tab-texnocrack.jpg  1x,
+                                                ./images/tab/work-list/jpg-xx/tab-texnocrack@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/webp-x/mob-texnocrack.webp  1x,
+                                                ./images/mob/work-list/webp-xx/mob-texnocrack@2x.webp 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/jpg-x/mob-texnocrack.jpg  1x,
+                                                ./images/mob/work-list/jpg-xx/mob-texnocrack@2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+
+                                        <img
+                                            class="work__img"
+                                            src="./images/mob/work-list/jpg-x/mob-texnocrack.jpg"
+                                            alt="Компютер"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+
+                                    <p class="work__owerlay">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів. Все це дозволить відвідувачу
+                                        отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+
+                                <div class="work__decoration-card">
+                                    <h2 class="work__title-portfolio">Технокряк</h2>
+                                    <p class="work__text-portfolio">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="work__item">
+                            <a class="work__link underline" href="">
+                                <div class="work__box">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/webp-x/desk-new-orlean.webp  1x,
+                                                ./images/desk/work-list/webp-xx/desk-new-orlean@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/jpg-x/desk-new-orlean.jpg  1x,
+                                                ./images/desk/work-list/jpg-xx/desk-new-orlean@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/webp-x/tab-new-orlean.webp  1x,
+                                                ./images/tab/work-list/webp-xx/tab-new-orlean@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/jpg-x/tab-new-orlean.jpg  1x,
+                                                ./images/tab/work-list/jpg-xx/tab-new-orlean@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/webp-x/mob-new-orlean.webp  1x,
+                                                ./images/mob/work-list/webp-xx/mob-new-orlean@2x.webp 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/jpg-x/mob-new-orlean.jpg  1x,
+                                                ./images/mob/work-list/jpg-xx/mob-new-orlean@2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+
+                                        <img
+                                            class="work__img"
+                                            src="./images/mob/work-list/jpg-x/mob-new-orlean.jpg"
+                                            alt="Баскетболісти"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+
+                                    <p class="work__owerlay">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів. Все це дозволить відвідувачу
+                                        отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                                <div class="work__decoration-card">
+                                    <h2 class="work__title-portfolio">
+                                        Постер <span lang="en">New Orlean vs Golden Star</span>
+                                    </h2>
+                                    <p class="work__text-portfolio">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="work__item">
+                            <a class="work__link underline" href="">
+                                <div class="work__box">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/webp-x/desk-seafood.webp  1x,
+                                                ./images/desk/work-list/webp-xx/desk-seafood@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/jpg-x/desk-seafood.jpg  1x,
+                                                ./images/desk/work-list/jpg-xx/desk-seafood@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/webp-x/tab-seafood.webp  1x,
+                                                ./images/tab/work-list/webp-xx/tab-seafood@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/jpg-x/tab-seafood.jpg  1x,
+                                                ./images/tab/work-list/jpg-xx/tab-seafood@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/webp-x/mob-seafood.webp  1x,
+                                                ./images/mob/work-list/webp-xx/mob-seafood@2x.webp 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/jpg-x/mob-seafood.jpg  1x,
+                                                ./images/mob/work-list/jpg-xx/mob-seafood@2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+
+                                        <img
+                                            class="work__img"
+                                            src="./images/mob/work-list/jpg-x/mob-seafood.jpg"
+                                            alt="Логотип"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+
+                                    <p class="work__owerlay">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів. Все це дозволить відвідувачу
+                                        отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+
+                                <div class="work__decoration-card">
+                                    <h2 class="work__title-portfolio">
+                                        Ресторан <span lang="en">Seafood</span>
+                                    </h2>
+                                    <p class="work__text-portfolio">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="work__item">
+                            <a class="work__link underline" href="">
+                                <div class="work__box">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/webp-x/desk-prime.webp  1x,
+                                                ./images/desk/work-list/webp-xx/desk-prime@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/jpg-x/desk-prime.jpg  1x,
+                                                ./images/desk/work-list/jpg-xx/desk-prime@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/webp-x/tab-prime.webp  1x,
+                                                ./images/tab/work-list/webp-xx/tab-prime@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/jpg-x/tab-prime.jpg  1x,
+                                                ./images/tab/work-list/jpg-xx/tab-prime@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/webp-x/mob-prime.webp  1x,
+                                                ./images/mob/work-list/webp-xx/mob-prime@2x.webp 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/jpg-x/mob-prime.jpg  1x,
+                                                ./images/mob/work-list/jpg-xx/mob-prime@2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+
+                                        <img
+                                            class="work__img"
+                                            src="./images/mob/work-list/jpg-x/mob-prime.jpg"
+                                            alt="Наушники"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+                                    <p class="work__owerlay">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів. Все це дозволить відвідувачу
+                                        отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+
+                                <div class="work__decoration-card">
+                                    <h2 class="work__title-portfolio">
+                                        Проект <span lang="en">Prime</span>
+                                    </h2>
+                                    <p class="work__text-portfolio">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="work__item">
+                            <a class="work__link underline" href="">
+                                <div class="work__box">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/webp-x/desk-boxes.webp  1x,
+                                                ./images/desk/work-list/webp-xx/desk-boxes@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/jpg-x/desk-boxes.jpg  1x,
+                                                ./images/desk/work-list/jpg-xx/desk-boxes@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/webp-x/tab-boxes.webp  1x,
+                                                ./images/tab/work-list/webp-xx/tab-boxes@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/jpg-x/tab-boxes.jpg  1x,
+                                                ./images/tab/work-list/jpg-xx/tab-boxes@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/webp-x/mob-boxes.webp  1x,
+                                                ./images/mob/work-list/webp-xx/mob-boxes@2x.webp 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/jpg-x/mob-boxes.jpg  1x,
+                                                ./images/mob/work-list/jpg-xx/mob-boxes@2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+
+                                        <img
+                                            class="work__img"
+                                            src="./images/mob/work-list/jpg-x/mob-boxes.jpg"
+                                            alt="Коробки"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+
+                                    <p class="work__owerlay">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів. Все це дозволить відвідувачу
+                                        отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+
+                                <div class="work__decoration-card">
+                                    <h2 class="work__title-portfolio">
+                                        Проект <span lang="en">Boxes</span>
+                                    </h2>
+                                    <p class="work__text-portfolio">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="work__item">
+                            <a class="work__link underline" href="">
+                                <div class="work__box">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/webp-x/desk-inspiration.webp  1x,
+                                                ./images/desk/work-list/webp-xx/desk-inspiration@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/jpg-x/desk-inspiration.jpg  1x,
+                                                ./images/desk/work-list/jpg-xx/desk-inspiration@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/webp-x/tab-inspiration.webp  1x,
+                                                ./images/tab/work-list/webp-xx/tab-inspiration@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/jpg-x/tab-inspiration.jpg  1x,
+                                                ./images/tab/work-list/jpg-xx/tab-inspiration@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/webp-x/mob-inspiration.webp  1x,
+                                                ./images/mob/work-list/webp-xx/mob-inspiration@2x.webp 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/jpg-x/mob-inspiration.jpg  1x,
+                                                ./images/mob/work-list/jpg-xx/mob-inspiration@2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+
+                                        <img
+                                            class="work__img"
+                                            src="./images/mob/work-list/jpg-x/mob-inspiration.jpg"
+                                            alt="Монітор"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+
+                                    <p class="work__owerlay">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів. Все це дозволить відвідувачу
+                                        отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+
+                                <div class="work__decoration-card">
+                                    <h2 class="work__title-portfolio" lang="en">
+                                        Inspiration has no Borders
+                                    </h2>
+                                    <p class="work__text-portfolio">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="work__item">
+                            <a class="work__link underline" href="">
+                                <div class="work__box">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/webp-x/desk-magazine.webp  1x,
+                                                ./images/desk/work-list/webp-xx/desk-magazine@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/jpg-x/desk-magazine.jpg  1x,
+                                                ./images/desk/work-list/jpg-xx/desk-magazine@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/webp-x/tab-magazine.webp  1x,
+                                                ./images/tab/work-list/webp-xx/tab-magazine@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/jpg-x/tab-magazine.jpg  1x,
+                                                ./images/tab/work-list/jpg-xx/tab-magazine@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/webp-x/mob-magazine.webp  1x,
+                                                ./images/mob/work-list/webp-xx/mob-magazine@2x.webp 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/jpg-x/mob-magazine.jpg  1x,
+                                                ./images/mob/work-list/jpg-xx/mob-magazine@2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+
+                                        <img
+                                            class="work__img"
+                                            src="./images/mob/work-list/jpg-x/mob-magazine.jpg"
+                                            alt="Журнал"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+
+                                    <p class="work__owerlay">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів. Все це дозволить відвідувачу
+                                        отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+
+                                <div class="work__decoration-card">
+                                    <h2 class="work__title-portfolio">
+                                        Видання <span lang="en">Limited Edition</span>
+                                    </h2>
+
+                                    <p class="work__text-portfolio">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="work__item">
+                            <a class="work__link underline" href="">
+                                <div class="work__box">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/webp-x/desk-lab.webp  1x,
+                                                ./images/desk/work-list/webp-xx/desk-lab@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/jpg-x/desk-lab.jpg  1x,
+                                                ./images/desk/work-list/jpg-xx/desk-lab@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/webp-x/tab-lab.webp  1x,
+                                                ./images/tab/work-list/webp-xx/tab-lab@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/jpg-x/tab-lab.jpg  1x,
+                                                ./images/tab/work-list/jpg-xx/tab-lab@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/webp-x/mob-lab.webp  1x,
+                                                ./images/mob/work-list/webp-xx/mob-lab@2x.webp 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/jpg-x/mob-lab.jpg  1x,
+                                                ./images/mob/work-list/jpg-xx/mob-lab@2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+
+                                        <img
+                                            class="work__img"
+                                            src="./images/mob/work-list/jpg-x/mob-lab.jpg"
+                                            alt="Бірка"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+
+                                    <p class="work__owerlay">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів. Все це дозволить відвідувачу
+                                        отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+
+                                <div class="work__decoration-card">
+                                    <h2 class="work__title-portfolio">
+                                        Проект <span lang="en">LAB</span>
+                                    </h2>
+                                    <p class="work__text-portfolio">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="work__item">
+                            <a class="work__link underline" href="">
+                                <div class="work__box">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/webp-x/desk-growing-business.webp  1x,
+                                                ./images/desk/work-list/webp-xx/desk-growing-business@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desk/work-list/jpg-x/desk-growing-business.jpg  1x,
+                                                ./images/desk/work-list/jpg-xx/desk-growing-business@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/webp-x/tab-growing-business.webp  1x,
+                                                ./images/tab/work-list/webp-xx/tab-growing-business@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tab/work-list/jpg-x/tab-growing-business.jpg  1x,
+                                                ./images/tab/work-list/jpg-xx/tab-growing-business@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/webp-x/mob-growing-business.webp  1x,
+                                                ./images/mob/work-list/webp-xx/mob-growing-business@2x.webp 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mob/work-list/jpg-x/mob-growing-business.jpg  1x,
+                                                ./images/mob/work-list/jpg-xx/mob-growing-business@2x.jpg 2x
+                                            "
+                                            media="(max-width: 768px)"
+                                        />
+
+                                        <img
+                                            class="work__img"
+                                            src="./images/mob/work-list/jpg-x/mob-growing-business.jpg"
+                                            alt="Ноутбук"
+                                            width="370"
+                                            height="294"
+                                        />
+                                    </picture>
+
+                                    <p class="work__owerlay">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем
+                                        функціоналу та сервісів. Все це дозволить відвідувачу
+                                        отримати вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+
+                                <div class="work__decoration-card">
+                                    <h2 class="work__title-portfolio" lang="en">
+                                        Growing Business
+                                    </h2>
+                                    <p class="work__text-portfolio">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--===== /WORK =====-->
+        </main>
+        <!--===== / MAIN =====-->
+
+        <!--===== FUTER =====-->
+        <footer class="footer">
+            <div class="container">
+                <div class="container__wrapper">
+                    <div class="contact-info contact-info_box">
+                        <a class="logo logo_white underline" href="./index.html" lang="en"
+                            ><span class="logo__first-word">Web</span>Studio</a
+                        >
+                        <address>
+                            <ul class="contact-info__item mark">
+                                <li class="contact-info__list">
+                                    <a
+                                        class="link-address underline"
+                                        href="https://goo.gl/maps/A7hrAquyFZ5KFBsbA"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        м. Київ, пр-т Лесі Українки, 26
+                                    </a>
+                                </li>
+    
+                                <li class="contact-info__list">
+                                    <a
+                                        class="contact-info_link underline"
+                                        href="mailto:info@example.com"
+                                        >info@example.com</a
+                                    >
+                                </li>
+    
+                                <li class="contact-info__list">
+                                    <a class="contact-info_link underline" href="tel:+380961111111"
+                                        >+38 096 111 11 11</a
+                                    >
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="social-contact">
+                        <h2 class="social-contact__text">приєднюйтесь</h2>
+                        <ul class="social-list social-list_footer mark">
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+    
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+    
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+    
+                            <li class="social-list__item">
+                                <a href="" class="social-list__link">
+                                    <svg class="social-list__icon" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <form class="modal-form-sign">
+                        <label class="social-contact__text" for="sign"> Підпишіться на розсилку </label>
+                        <span class="modal-form-sign__block">
+                            <input
+                                id="sign"
+                                type="email"
+                                class="modal-form-sign__input"
+                                name="email-sign"
+                                required
+                                placeholder="E-mail"
+                            />
+    
+                            <button class="btn" type="submit">
+                                <span class=""> Підписатися </span>
+    
+                                <svg class="btn__send" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </span>
+                    </form>
+                </div>
+                
+            </div>
+        </footer>
+        <!--===== / FUTER =====-->
+        <script src="./js/mobile-menu.js"></script>
+    </body>
+</html>

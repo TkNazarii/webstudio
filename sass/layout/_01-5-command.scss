@@ -1,0 +1,65 @@
+.command {
+    background-color: var(--color-white-background-people);
+    &__item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px 4px 4px 4px;
+        overflow: hidden;
+        background-color: var(--color-white-background);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .command__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.command {
+    &__decoration {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        @include decor(500, 16px, 18px);
+        text-align: center;
+    }
+
+    &__text-prof {
+        margin-bottom: 16px;
+        @include decor(400, 16px, 18px);
+        text-align: center;
+        color: var(--color-gray-text);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .command {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        &__item {
+            margin: 15px;
+            width: calc((100% - 4 * 15px) / 2);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .command {
+        &__list {
+            margin: -15px;
+        }
+
+        &__item {
+            margin: 15px;
+            width: calc((100% - 8 * 15px) / 4);
+        }
+    }
+}
